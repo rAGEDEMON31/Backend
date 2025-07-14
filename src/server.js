@@ -23,7 +23,7 @@ app.use(cors({credentials:true}));
 app.use("/api/employee", EmployeeRouter);
 app.use("/api/manager",ManagerRouter);
 
-const PORT = 8081;
+const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => {
     console.log(`🚀 Server is running on port ${PORT}.`);
   });

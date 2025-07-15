@@ -18,7 +18,10 @@ app.use(session({
    cookie: { secure: false, httpOnly: true }
  }))
 app.use(express.json());
-app.use(cors({credentials:true}));
+app.use(cors({
+  origin: "https://frontend-production-9cd2.up.railway.app",
+  credentials: true
+}));
 
 app.use("/api/employee", EmployeeRouter);
 app.use("/api/manager",ManagerRouter);

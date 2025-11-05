@@ -19,7 +19,7 @@ app.use(session({
  }))
 app.use(express.json());
 app.use(cors({
-  origin: "https://employeet.netlify.app/",
+  origin: "https://employeet.netlify.app",
   credentials: true
   
 }));

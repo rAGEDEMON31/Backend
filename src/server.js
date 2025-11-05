@@ -19,8 +19,9 @@ app.use(session({
  }))
 app.use(express.json());
 app.use(cors({
-  origin: "https://frontend-production-9cd2.up.railway.app",
+  origin: "https://employeet.netlify.app/",
   credentials: true
+  
 }));
 
 app.use("/api/employee", EmployeeRouter);
